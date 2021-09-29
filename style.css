@@ -5,7 +5,10 @@
 }
 
 body{
-    background: #959595;
+    /* background: #959595; */
+    background-image: url(todo_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-family: "Ruda", sans-serif;
     min-height: 100vh;
@@ -39,14 +42,14 @@ form button{
 }
 
 form button{
-    color: #959595;
+    /* color: #959595; */
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover{
-    background: #959595;
+    background: #000000;
     color: white;
 }
 
@@ -83,15 +86,25 @@ form button:hover{
     font-size: 1rem;
 } */
 .complete-btn{
-    background: #ff6f47;
+    background: #e06d4e;
     color: white;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
+    opacity: 0.6;
 }
 
 .complete-btn{
-    background: rgb(101, 238, 37);
+    background: rgb(79, 158, 43);
+    opacity: 0.6;
+}
+
+.complete-btn:hover{
+    opacity: 1;
+}
+
+.trash-btn:hover{
+    opacity: 1;
 }
 
 .todo-item{
