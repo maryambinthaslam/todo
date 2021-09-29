@@ -2,11 +2,13 @@
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
+const clearBtn = document.querySelector(".clearbtn");
 
 //event listeners
 document.addEventListener("DOMContentLoaded", getTodos);
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
+clearBtn.addEventListener("click",clearAll);
 
 //functions
 function addTodo(event){
@@ -111,4 +113,13 @@ function removeLocalTodos(todo){
     const todoIndex=todo.children[0].innerText;
     todos.splice(todos.indexOf(todoIndex),1);
     localStorage.setItem("todos",JSON.stringify(todos));
+}
+//clear 
+function clearAll(){
+    let todos;
+    todos=[];
+ 
+    localStorage.setItem('todos',JSON.stringify(todos));
+    location.reload();
+  
 }
