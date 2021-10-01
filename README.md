@@ -1,10 +1,10 @@
-ToDo List
+TODO APP
 
 Stack : Javascript
-Project : Make a ToDo app
+Project : Make a ToDo App
 
 Github repo : https://github.com/maryambinthaslam/todo
-Hosted Page link : 
+Hosted Page link : https://maryambinthaslam.github.io/todo/
 
 Team Members :
 Maryam PK - maryambinthaslam@gmail.com
